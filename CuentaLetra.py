@@ -1,14 +1,20 @@
-'''Hacer un programa en el que se pregunte al usuario por una frase
-y una letra, y muestre por pantalla el número de veces que aparece 
-la letra en la frase.'''
+# Programa para contar repeticiones de una letra en una frase
+# Modificado para la Práctica 3 - Gestión de la Configuración
 
-Frase = input("Ingresa una frase: ")
-Letra = input("Ingresa una letra: ")
+frase = input("Ingresa una frase: ")
+letra = input("Ingresa una letra: ")
 
-cont = 0
+# Convertimos ambos a minúsculas para una búsqueda exacta 
+# (Estándar de calidad en procesamiento de texto)
+frase_min = frase.lower()
+letra_min = letra.lower()
 
-for i in Frase:
-    if i == Letra:
-        cont += 1
+contador = 0
 
-print("La frase '" + Frase + "' tiene la letra '" + Letra + "' " + str(cont) + " veces.")
+for caracter in frase_min:
+    if caracter == letra_min:
+        contador += 1
+
+print(f"\nResultado:")
+print(f"En la frase: '{frase}'")
+print(f"La letra '{letra}' aparece {contador} veces.")
