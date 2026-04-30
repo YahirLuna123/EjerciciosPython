@@ -19,4 +19,8 @@ print(f"\nResultado:")
 print(f"En la frase: '{frase}'")
 print(f"La letra '{letra}' aparece {contador} veces.")
 
+<<<<<<< HEAD
 print("Finalizado por Yahir Luna - Local").
+=======
+print("Fin del proceso - Editado en Web").
+>>>>>>> 5ea855073be3ed9c248ed31e419afc4a63df650e
