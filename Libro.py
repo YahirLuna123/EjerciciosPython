@@ -15,3 +15,12 @@ class librox:
         self.nombre = None
         self.paginas = None
         self.__color = None
+
+class Revista(Libro):
+    def __init__(self, nombre=None, pags=None, clr=None, pID=None, aP=None):
+        super().__init__(nombre, pags, clr)
+        self.publicacionID = pID
+        self.AñoPublicacion =aP
+
+    def __str__(self) -> str:
+        return "La revista {} tiene {} paginas y fue publicada en el año{} ".format(self.nombre,self.paginas, self.AñoPublicacion )
